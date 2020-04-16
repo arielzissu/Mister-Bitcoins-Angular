@@ -1,0 +1,36 @@
+.home-page-container {
+    margin: 40px 100px;
+    img {
+        width: 35px;
+        height: 35px;
+        margin-right: 10px;
+    }
+    span {
+        margin-right: 10px;
+        text-decoration: underline;
+    }
+    .home-page-name {
+        margin-bottom: 20px;
+        font-size: 35px;
+    }
+    .home-page-coins {
+        display: flex;
+        align-items: center;
+        font-size: 24px;
+    }
+    .home-page-BTC {
+        display: flex;
+        align-items: center;
+        font-size: 24px;
+    }
+    .display {
+        display: none;
+    }
+}
+
+@media (max-width: 800px) {
+    .home-page-container {
+        padding: 0 30px;
+        margin: 30px auto;
+    }
+}

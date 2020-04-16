@@ -1,0 +1,4 @@
+<section *ngIf="contact" class="contact-preview-container" (click)="onDetails(contact.id)">
+    <img class="contact-preview-img-profile" [src]="contact.imgUrl" alt="Profile">
+    <h2>{{contact.name}}</h2>
+</section>

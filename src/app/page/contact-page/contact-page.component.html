@@ -1,0 +1,6 @@
+<section class="contact-page-container">
+    <h1>Contact Page</h1>
+    <filter-user (onFilter)="onFiltering($event)" [filterBy]="filterBy"></filter-user>
+    <contact-list [contacts]="contacts"></contact-list>
+    <div class="contact-page-add-btn" (click)="onAdd()">Add Contact</div>
+</section>

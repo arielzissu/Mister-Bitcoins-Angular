@@ -1,0 +1,65 @@
+.edit-page-container {
+    margin: 50px;
+    .edit-page-main {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 225px;
+        padding-left: 50px;
+    }
+    input {
+        margin-bottom: 20px;
+        width: 200px;
+        border-radius: 10px;
+        border: 2px black solid;
+        padding: 5px;
+        font-size: 14px;
+        font-weight: 500;
+    }
+    label {
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .edit-page-save-btn {
+        width: 100px;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 700;
+        border: 2px black solid;
+        border-radius: 10px;
+        margin-left: 50px;
+        &:hover {
+            color: white;
+            background: black;
+            cursor: pointer;
+        }
+    }
+    .edit-page-btns {
+        display: flex;
+        .edit-page-back-btn {
+            margin-right: 87%;
+        }
+        .edit-page-btn {
+            height: 40px;
+            width: 40px;
+            transition: all .3s;
+            &:hover {
+                cursor: pointer;
+                transform: scale(1.2);
+            }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .edit-page-container {
+        .edit-page-main {
+            margin: 0 0% 0 -10%;
+        }
+        .edit-page-btns {
+            .edit-page-back-btn {
+                margin-right: 75%;
+            }
+        }
+    }
+}

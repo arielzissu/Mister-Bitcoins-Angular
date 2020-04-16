@@ -1,0 +1,31 @@
+.contact-page-container {
+    text-align: center;
+    .contact-page-add-btn {
+        background-color: rgb(247, 186, 186);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        border: 2px black solid;
+        border-radius: 10px;
+        margin: 0 auto;
+        height: 30px;
+        width: 150px;
+        padding: 10px;
+        font-size: 16px;
+        font-weight: 700;
+        &:hover {
+            background-color: rgb(240, 92, 92);
+            cursor: pointer;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .contact-page-container {
+        .contact-page-add-btn {
+            margin: 10px auto;
+            height: 40px;
+        }
+    }
+}

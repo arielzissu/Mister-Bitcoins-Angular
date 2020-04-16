@@ -1,0 +1,8 @@
+<section class="home-page-container">
+    <div *ngIf="currUser">
+        <h2 class="home-page-name">Hello {{currUser[0].name | titlecase}}!</h2>
+        <h3 class="home-page-coins"><img src="../../../assets/imgs/coin.svg" alt="Coins"><span>Coins:</span>{{currUser[0].coins}}</h3>
+        <h3 class="home-page-BTC"><img src="../../../assets/imgs/bitcoin.svg" alt="Bitcoin"><span>BTC:</span>{{currPriceBTC}}</h3>
+    </div>
+    <move-list [currContact]="currUser"></move-list>
+</section>

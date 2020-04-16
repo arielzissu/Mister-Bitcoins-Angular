@@ -1,0 +1,32 @@
+<section *ngIf="currContact" class="edit-page-container">
+    <div class="edit-page-btns">
+        <img routerLink="/contact" class="edit-page-back-btn edit-page-btn" src="../../../assets/imgs/back.svg" alt="Back">
+        <img (click)="onDelete()" routerLink="/contact" class="edit-page-edit-btn edit-page-btn" src="../../../assets/imgs/delete.svg" alt="Delete">
+    </div>
+    <div class="edit-page-main">
+        <h2>Edit Contact:</h2>
+        <label>Name:</label>
+        <input type="text" [(ngModel)]="currContact.name" />
+        <label>Email:</label>
+        <input type="text" [(ngModel)]="currContact.email" />
+        <label>Phone:</label>
+        <input type="number" [(ngModel)]="currContact.phone" />
+        <div class="edit-page-save-btn" (click)="saveContact()">Save</div>
+    </div>
+</section>
+
+<section *ngIf="!currContact" class="edit-page-container">
+    <div class="edit-page-btns">
+        <img routerLink="/contact" class="edit-page-back-btn edit-page-btn" src="../../../assets/imgs/back.svg" alt="Back">
+    </div>
+    <div class="edit-page-main">
+        <h2>ADD New Contact:</h2>
+        <label>Name:</label>
+        <input type="text" [(ngModel)]="contact.name" />
+        <label>Email:</label>
+        <input type="text" [(ngModel)]="contact.email" />
+        <label>Phone:</label>
+        <input type="number" [(ngModel)]="contact.phone" />
+        <div class="edit-page-save-btn" (click)="addContact()">Add</div>
+    </div>
+</section>

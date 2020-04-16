@@ -1,0 +1,18 @@
+<section class="move-list-container">
+    <h2>Your Last 3 Moves:</h2>
+    <hr />
+    <div class="move-list-main-container display" *ngFor="let move of currMoves">
+        <div *ngIf="currMoves" class="move-list-main">
+            <h3 class="move-list-at">At: <span>{{move.at | date:'medium'}}</span></h3>
+            <h3 class="move-list-amount">Amount: <span>{{move.amount}} coins</span></h3>
+        </div>
+    </div>
+    <div class="move-list-main-container display" *ngFor="let move of currMovesSlices">
+        <div class="move-list-main">
+            <h3 class="move-list-to">To: <span>{{move.to | titlecase}}</span></h3>
+            <h3 class="move-list-at">At: <span>{{move.at | date:'medium'}}</span></h3>
+            <h3 class="move-list-amount">Amount: <span>{{move.amount}} coins</span></h3>
+        </div>
+    </div>
+    <hr />
+</section>
